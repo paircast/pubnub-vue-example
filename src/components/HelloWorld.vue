@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <ul>
-      <li v-for="message in lastMessages">{{message}}</li>
+      <li v-for="message in lastMessages" v-bind:key="lastMessage.date">{{message}}</li>
     </ul>
     <button v-on:click="push()">Publish</button>
   </div>
