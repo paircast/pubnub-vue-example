@@ -18,7 +18,8 @@ export default {
         message: new Date().getTime()
       });
     }
-  }
+  },
+  mounted() {}
 };
 </script>
 
