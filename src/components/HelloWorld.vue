@@ -19,7 +19,11 @@ export default {
       });
     }
   },
-  mounted() {}
+  mounted() {
+    this.$pnSubscribe({
+      channels: ["general"]
+    });
+  }
 };
 </script>
 
