@@ -19,6 +19,7 @@ export default {
   },
   data() {
     return {
+      inputMessage,
       lastMessages: this.$pnGetMessage("general")
     };
   },
