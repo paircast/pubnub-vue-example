@@ -27,7 +27,7 @@ export default {
     push() {
       this.$pnPublish({
         channel: "general",
-        message: new Date().getTime()
+        message: this.inputMessage
       });
     }
   },
