@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      lastMessage: this.$pnGetMessage("ch1")
+      lastMessage: this.$pnGetMessage("general")
     };
   },
   methods: {
