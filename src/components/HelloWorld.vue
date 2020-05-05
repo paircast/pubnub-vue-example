@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      inputMessage,
+      inputMessage: this.inputMessage,
       lastMessages: this.$pnGetMessage("general")
     };
   },
