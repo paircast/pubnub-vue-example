@@ -15,7 +15,7 @@ export default {
     push() {
       this.$pnPublish({
         channel: "general",
-        message: new Date().now()
+        message: Date().now()
       });
     }
   }
