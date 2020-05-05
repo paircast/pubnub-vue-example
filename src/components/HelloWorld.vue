@@ -12,10 +12,12 @@ export default {
   },
   methods: {
     push() {
+      
       this.$pnPublish({
         channel: "general",
         message: new Date().now()
       });
+
     }
   }
 };
