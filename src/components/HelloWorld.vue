@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ lastMessage }}</h1>
     <button v-on:click="push()">Publish</button>
   </div>
 </template>
