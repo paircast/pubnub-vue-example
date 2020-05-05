@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <ul>
-      <li v-for="rawMessage in lastMessages" v-bind:key="message.timetoken">{{message}}</li>
+      <li v-for="rawMessage in lastMessages" v-bind:key="rawMessage.timetoken">{{message}}</li>
     </ul>
     <button v-on:click="push()">Publish</button>
   </div>
