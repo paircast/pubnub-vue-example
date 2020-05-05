@@ -25,6 +25,8 @@ export default {
   },
   methods: {
     push() {
+      console.log(this.inputMessage);
+
       this.$pnPublish({
         channel: "general",
         message: this.inputMessage
