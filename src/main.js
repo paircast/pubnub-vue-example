@@ -7,7 +7,7 @@ Vue.config.productionTip = false;
 Vue.use(PubNubVue, {
   subscribeKey: 'demo',
   publishKey: 'demo'
-})
+});
 
 new Vue({
   render: h => h(App),
