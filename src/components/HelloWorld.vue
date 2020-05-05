@@ -9,6 +9,13 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  methods: {
+    push() {
+      this.$pnPublish({
+        channel: "general"
+      });
+    }
   }
 };
 </script>
