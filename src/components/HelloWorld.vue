@@ -11,6 +11,11 @@ export default {
   props: {
     msg: String
   },
+  data() {
+    return {
+      lastMessage: this.$pnGetMessage("ch1")
+    };
+  },
   methods: {
     push() {
       this.$pnPublish({
