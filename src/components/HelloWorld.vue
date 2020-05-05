@@ -29,6 +29,8 @@ export default {
         channel: "general",
         message: this.inputMessage
       });
+
+      this.inputMessage = "";
     }
   },
   mounted() {
