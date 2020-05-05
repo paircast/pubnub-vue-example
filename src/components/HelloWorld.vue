@@ -6,6 +6,7 @@
         v-bind:key="rawMessage.timetoken"
       >{{rawMessage.message}}</li>
     </ul>
+    <input v-bind="inputMessage" type="text" />
     <button v-on:click="push()">Publish</button>
   </div>
 </template>
