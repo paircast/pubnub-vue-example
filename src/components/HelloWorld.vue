@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <button v-on:click="push()" />
   </div>
 </template>
 
@@ -12,12 +13,10 @@ export default {
   },
   methods: {
     push() {
-      
       this.$pnPublish({
         channel: "general",
         message: new Date().now()
       });
-
     }
   }
 };
