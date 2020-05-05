@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ lastMessages }}</h1>
+    <ul>
+      <li v-for="message in lastMessages">{{message}}</li>
+    </ul>
+    {{ lastMessages }}
     <button v-on:click="push()">Publish</button>
   </div>
 </template>
